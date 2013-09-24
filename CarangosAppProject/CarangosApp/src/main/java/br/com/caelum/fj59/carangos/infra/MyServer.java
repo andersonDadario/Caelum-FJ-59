@@ -6,12 +6,8 @@ public class MyServer {
     private static String uri;
 
     static {
-        if (taNoEmulador()) {
-            uri = "http://10.0.2.2:8080/%s";
-        } else {
-			uri = "http://carangos.herokuapp.com/%s";
+        uri = "http://carangos.herokuapp.com/%s";
 //            uri = "http://192.168.84.145:8080/carangos/%s";
-        }
     }
 
     public static String uriFor(String value) {
