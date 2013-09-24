@@ -41,7 +41,7 @@ public class MainActivity extends Activity implements BuscaMaisPostsDelegate {
 
     @Override
     public void lidaComErro(Exception e){
-        Toast.makeText(this, "Erro ao buscar dados", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
     }
 
 
