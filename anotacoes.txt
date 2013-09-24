@@ -1,0 +1,26 @@
+Aula 01
+
+IntelliJ (JetBrains)
+Android Studio
+Gerenciamento de Dependências c/ Gradle (1.7)
+
+	>> Último target SDK
+	>> [X] Create Activity
+
+	>> File
+	>> Settings
+	>> Gradle
+	>> Use local gradle distribution
+
+	>> File
+	>> Project Structure
+	>> Modules
+	>> +
+	>> Gradle Module
+	>> [Remove Content Root]
+	>> [Add Content Root]
+	>> [Delete untitled]
+		
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Dicas
+	Genymotion
