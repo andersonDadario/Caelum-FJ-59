@@ -32,7 +32,8 @@ public class BlogPostAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return posts.get(i);
+       this.posts.clear();
+       return posts.get(i);
     }
 
     @Override

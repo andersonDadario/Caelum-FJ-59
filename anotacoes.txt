@@ -1,8 +1,8 @@
 Aula 01
 
-IntelliJ (JetBrains)
-Android Studio
-Gerenciamento de Dependências c/ Gradle (1.7)
+	IntelliJ (JetBrains)
+	Android Studio
+	Gerenciamento de Dependências c/ Gradle (1.7)
 
 	>> Último target SDK
 	>> [X] Create Activity
@@ -20,7 +20,17 @@ Gerenciamento de Dependências c/ Gradle (1.7)
 	>> [Remove Content Root]
 	>> [Add Content Root]
 	>> [Delete untitled]
-		
+
+
+Aula 02
+	StateMachine
+	enum EstadoBlogPostFragment{
+
+	}
+
+	ProgressFragment
+	https://gist.github.com/andrelrs/6692443
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Dicas
 	Genymotion

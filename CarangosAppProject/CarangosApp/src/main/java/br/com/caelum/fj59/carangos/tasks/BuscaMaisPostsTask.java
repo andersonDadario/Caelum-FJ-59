@@ -19,6 +19,7 @@ public class BuscaMaisPostsTask extends AsyncTask <Pagina, Void, List<BlogPost>>
 
     public BuscaMaisPostsTask(BuscaMaisPostsDelegate delegate){
         this.delegate = delegate;
+        this.delegate.getCarangosApplication().registra(this);
     }
 
     @Override
@@ -43,5 +44,6 @@ public class BuscaMaisPostsTask extends AsyncTask <Pagina, Void, List<BlogPost>>
         } else {
             this.delegate.lidaComErro(this.erro);
         }
+        delegate.getCarangosApplication().desregistra(this);
     }
 }
