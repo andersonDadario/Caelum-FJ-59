@@ -31,6 +31,29 @@ Aula 02
 	ProgressFragment
 	https://gist.github.com/andrelrs/6692443
 
+Aula 03
+	[Android com seta azul para baixo]
+	>> [Android Tools]
+	>> ARM EABI v7a System Image
+	>> Intel x86 Atom System Image
+	>> Android Support Repository
+	>> Android Support Library
+	>> Google Play Services
+	>> Google Play Repositories
+
+	build.gradle
+	  http://mvnrepository.com/artifact/com.koushikdutta.urlimageviewhelper/urlimageviewhelper/1.0
+	  http://mvnrepository.com/artifact/com.squareup.picasso/picasso/2.0.2
+	  http://revistagloborural.globo.com/Revista/GloboRural/foto/0,,69831891,00.jpg
+
+	build >> compile project
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Dicas
 	Genymotion
+	NavUtils
+
+Libs
+	URLImageViewHelper
+	Picasso
+
