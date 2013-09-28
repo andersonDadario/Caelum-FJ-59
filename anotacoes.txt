@@ -48,10 +48,15 @@ Aula 03
 
 	build >> compile project
 
+
+>> Application é o último a morrer
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Dicas
 	Genymotion
 	NavUtils
+	androidviews.net
+	devappsdirect
+	javascript call for activity
 
 Libs
 	URLImageViewHelper

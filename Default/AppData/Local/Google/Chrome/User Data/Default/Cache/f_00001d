@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30428546-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Black background in Windows 7 when using a mandatory profile &laquo;  </title>
+
+<link rel="stylesheet" href="http://markswinkels.nl/wp-content/themes/aurora/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title=" RSS Feed" href="http://markswinkels.nl/feed/" />
+<link rel="alternate" type="application/atom+xml" title=" Atom Feed" href="http://markswinkels.nl/feed/atom/" />
+<link rel="pingback" href="http://markswinkels.nl/xmlrpc.php" />
+
+
+<link rel='stylesheet' id='social-widget-css'  href='http://markswinkels.nl/wp-content/plugins/social-media-widget/social_widget.css?ver=3.5.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://markswinkels.nl/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://markswinkels.nl/wp-includes/js/comment-reply.min.js?ver=3.5.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://markswinkels.nl/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://markswinkels.nl/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Hyper-V snapshots, why are they still there..??' href='http://markswinkels.nl/2011/08/hyper-v-snapshots-why-are-they-still-there/' />
+<link rel='next' title='Exchange 2010 Deployment Assistant' href='http://markswinkels.nl/2011/09/exchange-2010-deployment-assistant/' />
+<meta name="generator" content="WordPress 3.5.1" />
+<link rel='canonical' href='http://markswinkels.nl/2011/09/black-background-in-windows-7-when-using-a-mandatory-profile/' />
+<link rel='shortlink' href='http://markswinkels.nl/?p=1988' />
+
+<!-- This site is using AdRotate v3.8.4.1 to display their advertisements - http://www.adrotateplugin.com/ -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-30428546-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!-- Protected by WP-SpamFree v2.1.1.2 :: JS BEGIN -->
+<script type="text/javascript" src="http://markswinkels.nl/wp-content/plugins/wp-spamfree/js/wpsf-js.php"></script> 
+<!-- Protected by WP-SpamFree v2.1.1.2 :: JS END -->
+
+
+<link rel="stylesheet" href="http://markswinkels.nl/wp-content/plugins/youtube-simplegallery/youtube_simplegallery.css" type="text/css" media="screen" /><style type="text/css">
+	<!-- 
+		.youtube_gallery div { width: 425px !important; } 
+		.youtube_gallery_caption { text-align: center;
+font-size: 1.2em;
+font-style: italic; } 
+		.youtube_gallery_item .ytsg_play { width: 170px; height: 170px; left: 128px; top: 74px; };
+	-->
+	</style>
+<script type="text/javascript"> 
+jQuery(document).ready(function($) {
+	totalwidth = ($(".youtube_gallery").width());
+	numberdivs = totalwidth/425;
+	numberdivs = (numberdivs < 0 ? -1 : 1) * Math.floor(Math.abs(numberdivs))
+	spacing = totalwidth - (425*numberdivs);
+	$(".youtube_gallery").css({ 'margin-left' : (spacing/2), 'margin-right' : (spacing/2) });
+});
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="page">
+
+<div id="header">
+		<h1><a href="http://markswinkels.nl/"></a></h1>
+		<div class="description"></div>
+</div>
+
+<div id="container">
+	<div id="content">
+
+	
+
+
+  <div id="post-1988" class="post-1988 post type-post status-publish format-standard hentry category-microsoft-windows-7">
+ 
+
+<div class="entry-date">
+<div class="month">Sep</div>
+<div class="day">13</div>
+<div class="year">2011</div>
+</div>
+
+<h1 class="post-title">Black background in Windows 7 when using a mandatory profile</h1>
+
+
+			<div class="entry">
+				<p>When you&#8217;re configuring a mandatory profile whitin Windows 7 and the first users are logging in, the desktop background is completely black&#8230;.Personnaly I don&#8217;t like this kind of dark backgrounds <img src='http://markswinkels.nl/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  Why is this backgound black? Let&#8217;s have a look!</p>
+<p>When you&#8217;ve created the mandatory profile, there was a default Windows 7 background. There&#8217;s a registry key that saves this background setting and there the whole point!</p>
+<p>1.) Open the registry editor (regedit)<br />
+2.) Select the <strong>HKEY_USERS</strong><br />
+3.) Click <em><strong>File</strong>,<strong> Load Hive</strong><br />
+</em>4.) Browse to your mandatory profile and select the <strong><em>NTUSER.MAN</em></strong> file<br />
+5.) Give it a name and click OK<br />
+6.) Browse to <strong><em>HKEY_USERS</em></strong> and select your Hive<br />
+7.) Browse to <strong><em>HKEY_Users\YOURHIVE\Control Panel\Desktop</em></strong><br />
+8.) There&#8217;s a <strong><em>REG_SZ</em></strong> named <strong><em>Wallpaper<br />
+</em></strong>9.) This vallue is the wrong one. It&#8217;s located to the template user for creating the mandatory profile.<br />
+10.) Let&#8217;s chance this location to the new location. In my example it&#8217;s the Windows folder, but it can alse be a custom location. <strong><em>C:\Windows\Web\Wallpaper\Windows\img0.jpg<br />
+</em></strong>11.) After changing this path, don&#8217;t forget to <strong>unload</strong> the completely Hive from your registry editor<br />
+12.) Login again with a user and you&#8217;ll see that there&#8217;s the wallpaper. It&#8217;s a mandatory profile, so all users will get the same wallpaper!</p>
+<p><a href="http://markswinkels.nl/wp-content/uploads/2011/09/WP_00.jpg"><img class="alignnone size-thumbnail wp-image-1989" title="WP_00" src="http://markswinkels.nl/wp-content/uploads/2011/09/WP_00-150x150.jpg" alt="" width="150" height="150" /></a>    <a href="http://markswinkels.nl/wp-content/uploads/2011/09/WP_011.jpg"><img class="alignnone size-thumbnail wp-image-1996" title="WP_01" src="http://markswinkels.nl/wp-content/uploads/2011/09/WP_011-150x150.jpg" alt="" width="150" height="150" /> </a>   <a href="http://markswinkels.nl/wp-content/uploads/2011/09/WP_021.jpg"><img class="alignnone size-thumbnail wp-image-1997" title="WP_02" src="http://markswinkels.nl/wp-content/uploads/2011/09/WP_021-150x150.jpg" alt="" width="150" height="150" /></a></p>
+<p><a href="http://markswinkels.nl/wp-content/uploads/2011/09/WP_03.jpg"><img class="alignnone size-thumbnail wp-image-1992" title="WP_03" src="http://markswinkels.nl/wp-content/uploads/2011/09/WP_03-150x150.jpg" alt="" width="150" height="150" /></a></p>
+<p>&nbsp;</p>
+<span style="clear:both;display:none;"><img src="http://markswinkels.nl/wp-content/plugins/wp-spamfree/img/wpsf-img.php" width="0" height="0" alt="" style="border-style:none;width:0px;height:0px;display:none;" /></span>
+								
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Tuesday, September 13th, 2011 at 11:49 am						and is filed under <a href="http://markswinkels.nl/category/microsoft-windows-7/" title="View all posts in Microsoft Windows 7" rel="category tag">Microsoft Windows 7</a>.
+						You can follow any responses to this entry through the <a href='http://markswinkels.nl/2011/09/black-background-in-windows-7-when-using-a-mandatory-profile/feed/'>RSS 2.0</a> feed.
+
+													Both comments and pings are currently closed.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://markswinkels.nl/2011/08/hyper-v-snapshots-why-are-they-still-there/" rel="prev">Hyper-V snapshots, why are they still there..??</a></div>
+			<div class="alignright"><a href="http://markswinkels.nl/2011/09/exchange-2010-deployment-assistant/" rel="next">Exchange 2010 Deployment Assistant</a> &raquo;</div>
+            <div class="cb"></div>
+		</div>
+        
+	
+<!-- You can start editing here. -->
+
+
+			<!-- If comments are closed. -->
+		<p class="nocomments">Comments are closed.</p>
+
+	
+
+
+	
+	</div>
+
+</div>
+
+	<div class="sidebar">
+		<ul>
+			<li id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" action="http://markswinkels.nl/" >
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+	</form></li><li id="text-5" class="widget widget_text">			<div class="textwidget"><a href="http://www.altaro.com/hyper-v-backup/lp/2/?LP=markswinkels" target="_blank">
+<img src="http://markswinkels.nl/wp-content/255x255-red.png" alt="Altaro Hyper-V Backup for Microsoft Hyper-V" />
+</a>
+<br><br>
+<a href="http://www.ictivitytraining.nl/training-opleiding-cursus/microsoft" target="_blank"><img src="http://www.markswinkels.nl/wp-content/Ictivity_part_1_255x30.jpg" alt="Advertise">
+<a href="http://www.ictivitytraining.nl/training-opleiding-cursus/res-software" target="_blank"><img src="http://www.markswinkels.nl/wp-content/Ictivity_part_2_255x29.jpg" alt="Advertise">
+<a href="http://www.ictivitytraining.nl" target="_blank"><img src="http://www.markswinkels.nl/wp-content/Ictivity_part_3_255x66.jpg" alt="Advertise">
+</a>
+<br><br>
+<a href="http://www.trainsignal.com/Exchange-Server-2010-Training-Videos.aspx" target="_blank">
+<img src="http://markswinkels.nl/wp-content/Exchange-2010-Ad-TrainSignal.gif" alt="TrainSignal Exchange 2010" />
+<br><br>
+<a href="http://www.tgrmn.com/web/realtime_replication.htm" target="_blank">
+<img src="http://markswinkels.nl/wp-content/ViceVersa_250x125.png" alt="ViceVersa PRO: real-time file replication software" />
+<br><br>
+<a href="http://www.trilead.com/?cp=markswinkels&utm_source=markswinkels&utm_medium=255banner&utm_campaign=v4" target="_blank">
+<img src="http://markswinkels.nl/wp-content/trilead_banner_255x255.jpg" alt="Trilead VM Explorer
+Backup VMware and Microsoft Hyper-V" />
+<br></div>
+		</li><li id="text-6" class="widget widget_text">			<div class="textwidget"><div class="textwidget">
+
+<a href="http://www.hyperoo.net" target="_blank"><img src="http://www.markswinkels.nl/wp-content/hyperAd.png" style="border: none;" width="125" height="125" alt="Hyperoo Backup for Hyper-V"></a>
+<!--&nbsp;
+&nbsp;-->
+<a href="http://www.unitrends.com/unitrends-enterprise-backup/download?med=Banner+Ad&lsrc=Social+Media&src=Mark+Swinkels
+" target="_blank"><img src="http://www.markswinkels.nl/wp-content/Free-Hyper-V-logo-125x125.jpg" style="border: none;" width="125" height="125" alt="Unitrends Free Hyper-V backup"></a>
+
+<p> </p>
+
+<a href="http://affiliates.cbtnuggets.com/markswinkels/" target="_blank"><img src="http://www.markswinkels.nl/wp-content/affiliate-ad-125.png" style="border: none;" width="125" height="125" alt="CBT Nuggets"></a>
+<!--&nbsp;
+&nbsp;-->
+<a href="mailto:info@markswinkels.nl""><img src="http://www.markswinkels.nl/wp-content/advertise.gif" style="border: none;" width="125" height="125" alt="Advertise"></a>
+
+</div>
+</div>
+		</li><li id="social-widget-2" class="widget Social_Widget"><div class="socialmedia-buttons smw_left"><a href="http://twitter.com/#!/Mark_Swinkels" rel="nofollow" target="_blank"><img width="32" height="32" src="http://markswinkels.nl/wp-content/plugins/social-media-widget/images/default/32/twitter.png" alt="Follow Us on Twitter" title="Follow Us on Twitter" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://nl.linkedin.com/pub/mark-swinkels/15/a1/2b" rel="nofollow" target="_blank"><img width="32" height="32" src="http://markswinkels.nl/wp-content/plugins/social-media-widget/images/default/32/linkedin.png" alt="Follow Us on LinkedIn" title="Follow Us on LinkedIn" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://www.markswinkels.nl" rel="nofollow" target="_blank"><img width="32" height="32" src="http://markswinkels.nl/wp-content/plugins/social-media-widget/images/default/32/blogger.png" alt="Follow Us on Blogger" title="Follow Us on Blogger" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://www.markswinkels.nl" rel="nofollow" target="_blank"><img width="32" height="32" src="http://markswinkels.nl/wp-content/plugins/social-media-widget/images/default/32/wordpress.png" alt="Follow Us on Wordpress" title="Follow Us on Wordpress" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://markswinkels.nl/feed/" rel="nofollow" target="_blank"><img width="32" height="32" src="http://markswinkels.nl/wp-content/plugins/social-media-widget/images/default/32/rss.png" alt="Follow Us on RSS" title="Follow Us on RSS" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="mailto:info@markswinkels.nl" rel="nofollow" target="_blank"><img width="32" height="32" src="http://markswinkels.nl/wp-content/plugins/social-media-widget/images/default/32/email.png" alt="Follow Us on E-mail" title="Follow Us on E-mail" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a></div></li><li id="pages-2" class="widget widget_pages"><h2 class="widgettitle">Pages</h2>		<ul>
+			<li class="page_item page-item-2"><a href="http://markswinkels.nl/about/">Contact</a></li>
+<li class="page_item page-item-2188"><a href="http://markswinkels.nl/links/">Links</a></li>
+		</ul>
+		</li><li id="tag_cloud-3" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2><div class="tagcloud"><a href='http://markswinkels.nl/category/active-directory/' class='tag-link-9' title='10 topics' style='font-size: 15.507246376812pt;'>Active Directory</a>
+<a href='http://markswinkels.nl/category/ictivity/' class='tag-link-67' title='1 topic' style='font-size: 8pt;'>Ictivity</a>
+<a href='http://markswinkels.nl/category/mdt/' class='tag-link-18' title='4 topics' style='font-size: 12.057971014493pt;'>MDT</a>
+<a href='http://markswinkels.nl/category/microsoft-exams/' class='tag-link-11' title='3 topics' style='font-size: 11.04347826087pt;'>Microsoft Exams</a>
+<a href='http://markswinkels.nl/category/microsoft-exchange-2003-server/' class='tag-link-5' title='5 topics' style='font-size: 12.869565217391pt;'>Microsoft Exchange 2003 Server</a>
+<a href='http://markswinkels.nl/category/microsoft-exchange-2007-scripts/' class='tag-link-15' title='15 topics' style='font-size: 17.130434782609pt;'>Microsoft Exchange 2007 Scripts</a>
+<a href='http://markswinkels.nl/category/exchange-2007/' class='tag-link-6' title='47 topics' style='font-size: 22pt;'>Microsoft Exchange 2007 Server</a>
+<a href='http://markswinkels.nl/category/microsoft-exchange-2010-server/' class='tag-link-19' title='35 topics' style='font-size: 20.782608695652pt;'>Microsoft Exchange 2010 Server</a>
+<a href='http://markswinkels.nl/category/microsoft-exchange-2013-server/' class='tag-link-98' title='3 topics' style='font-size: 11.04347826087pt;'>Microsoft Exchange 2013 Server</a>
+<a href='http://markswinkels.nl/category/microsoft-fun/' class='tag-link-10' title='2 topics' style='font-size: 9.8260869565217pt;'>Microsoft Fun</a>
+<a href='http://markswinkels.nl/category/microsoft-hyper-v/' class='tag-link-13' title='22 topics' style='font-size: 18.753623188406pt;'>Microsoft Hyper-V</a>
+<a href='http://markswinkels.nl/category/microsoft-lync/' class='tag-link-29' title='4 topics' style='font-size: 12.057971014493pt;'>Microsoft Lync</a>
+<a href='http://markswinkels.nl/category/microsoft-news/' class='tag-link-12' title='8 topics' style='font-size: 14.594202898551pt;'>Microsoft News</a>
+<a href='http://markswinkels.nl/category/microsoft-ocs-2007-r2/' class='tag-link-24' title='1 topic' style='font-size: 8pt;'>Microsoft OCS 2007 R2</a>
+<a href='http://markswinkels.nl/category/microsoft-office-2007/' class='tag-link-16' title='1 topic' style='font-size: 8pt;'>Microsoft Office 2007</a>
+<a href='http://markswinkels.nl/category/microsoft-office-2010/' class='tag-link-129' title='1 topic' style='font-size: 8pt;'>Microsoft Office 2010</a>
+<a href='http://markswinkels.nl/category/microsoft-sccm-2007/' class='tag-link-23' title='23 topics' style='font-size: 18.95652173913pt;'>Microsoft SCCM 2007</a>
+<a href='http://markswinkels.nl/category/microsoft-sccm-2012/' class='tag-link-173' title='1 topic' style='font-size: 8pt;'>Microsoft SCCM 2012</a>
+<a href='http://markswinkels.nl/category/microsoft-scom-2007/' class='tag-link-20' title='3 topics' style='font-size: 11.04347826087pt;'>Microsoft SCOM 2007</a>
+<a href='http://markswinkels.nl/category/microsoft-sccm-2008-r2/' class='tag-link-26' title='3 topics' style='font-size: 11.04347826087pt;'>Microsoft SCVMM 2008 R2</a>
+<a href='http://markswinkels.nl/category/microsoft-sql-2008-server/' class='tag-link-25' title='2 topics' style='font-size: 9.8260869565217pt;'>Microsoft SQL 2008 Server</a>
+<a href='http://markswinkels.nl/category/microsoft-windows-7/' class='tag-link-27' title='4 topics' style='font-size: 12.057971014493pt;'>Microsoft Windows 7</a>
+<a href='http://markswinkels.nl/category/microsoft-windows-8/' class='tag-link-133' title='3 topics' style='font-size: 11.04347826087pt;'>Microsoft Windows 8</a>
+<a href='http://markswinkels.nl/category/microsoft-windows-8-server/' class='tag-link-28' title='1 topic' style='font-size: 8pt;'>Microsoft Windows 8 Server</a>
+<a href='http://markswinkels.nl/category/microsoft-windows-2003-server/' class='tag-link-3' title='12 topics' style='font-size: 16.217391304348pt;'>Microsoft Windows 2003 Server</a>
+<a href='http://markswinkels.nl/category/microsoft-windows-2008-r2-server/' class='tag-link-123' title='7 topics' style='font-size: 14.086956521739pt;'>Microsoft Windows 2008 R2 Server</a>
+<a href='http://markswinkels.nl/category/windows2008/' class='tag-link-4' title='37 topics' style='font-size: 20.985507246377pt;'>Microsoft Windows 2008 Server</a>
+<a href='http://markswinkels.nl/category/microsoft-windows-server-2012/' class='tag-link-60' title='24 topics' style='font-size: 19.159420289855pt;'>Microsoft Windows Server 2012</a>
+<a href='http://markswinkels.nl/category/news/' class='tag-link-22' title='5 topics' style='font-size: 12.869565217391pt;'>News</a>
+<a href='http://markswinkels.nl/category/res-automation-manager/' class='tag-link-104' title='1 topic' style='font-size: 8pt;'>RES Automation Manager</a>
+<a href='http://markswinkels.nl/category/res-powerfuse/' class='tag-link-17' title='6 topics' style='font-size: 13.579710144928pt;'>RES Powerfuse</a>
+<a href='http://markswinkels.nl/category/res-wisdom/' class='tag-link-21' title='2 topics' style='font-size: 9.8260869565217pt;'>RES Wisdom</a>
+<a href='http://markswinkels.nl/category/res-workspace-manager/' class='tag-link-114' title='5 topics' style='font-size: 12.869565217391pt;'>RES Workspace Manager</a>
+<a href='http://markswinkels.nl/category/system-center-2012/' class='tag-link-79' title='5 topics' style='font-size: 12.869565217391pt;'>System Center 2012</a>
+<a href='http://markswinkels.nl/category/uncategorized/' class='tag-link-1' title='32 topics' style='font-size: 20.376811594203pt;'>Uncategorized</a>
+<a href='http://markswinkels.nl/category/vmware/' class='tag-link-14' title='2 topics' style='font-size: 9.8260869565217pt;'>VMware</a></div>
+</li>		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>		<ul>
+					<li>
+				<a href="http://markswinkels.nl/2013/03/how-to-building-the-ultimate-lab-environment-using-windows-8-client-hyper-v/" title="How to: Building the ultimate lab environment using Windows 8 Client Hyper-V">How to: Building the ultimate lab environment using Windows 8 Client Hyper-V</a>
+						</li>
+					<li>
+				<a href="http://markswinkels.nl/2013/02/z-hire-active-directory-exchange-lync-user-creation-tool/" title="Z-Hire Active Directory, Exchange, Lync User Creation Tool">Z-Hire Active Directory, Exchange, Lync User Creation Tool</a>
+						</li>
+					<li>
+				<a href="http://markswinkels.nl/2013/02/how-to-sccm-2012-and-installing-drivers-by-computer-model-using-wmi-query/" title="How to: SCCM 2012 and installing drivers by computer model using WMI query">How to: SCCM 2012 and installing drivers by computer model using WMI query</a>
+						</li>
+					<li>
+				<a href="http://markswinkels.nl/2013/02/net-logon-service-wont-start-after-demoting-a-domain-controller/" title="Net Logon Service won’t start after demoting a domain controller">Net Logon Service won’t start after demoting a domain controller</a>
+						</li>
+					<li>
+				<a href="http://markswinkels.nl/2013/01/how-to-lock-desktop-icon-using-res-workspace-manager-2012/" title="How to: Lock desktop icon using RES Workspace Manager 2012">How to: Lock desktop icon using RES Workspace Manager 2012</a>
+						</li>
+				</ul>
+		</li>		</ul>
+	</div>
+
+<div class="cb"></div>
+
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+<!--	<p>Powered by <a href="http://wordpress.org/">WordPress</a> | 
+    <a href="http://markswinkels.nl/feed/">Entries (RSS)</a> | 
+    <a href="http://markswinkels.nl/comments/feed/">Comments (RSS)</a> |
+    Template by <a href="http://www.mbwebdesign.co.uk">MB Web Design</a> -->
+		<!-- 28 queries. 13.275 seconds. -->
+	</p>
+</div>
+
+</div>
+
+<script type='text/javascript' src='http://markswinkels.nl/wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.9.2'></script>
+
+</div><!-- End of Wrapper -->
+</body>
+</html>

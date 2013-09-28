@@ -1,0 +1,75 @@
+
+Thu Mar 14 15:52:14 2013
+:: **************** Running jusched ****************
+
+Thu Mar 14 15:57:14 2013
+:: OpenJavaFXUpdateKey: Error:2, ErrorCode:0
+
+Thu Mar 14 15:57:14 2013
+:: SetDefaultJavaFXUpdateSchedule: Frequency:16, Schedule: 6:10
+
+Thu Mar 14 15:57:14 2013
+:: GetJavaFXUpdateTimeKey: returning FALSE
+
+Thu Mar 14 15:57:14 2013
+:: Time for a Java Update check.
+
+Thu Mar 14 15:57:28 2013
+:: No cntry-lookup tag in map.xml
+Thu Mar 14 15:57:28 2013
+:: OVERRIDE SYSTEM VALUE==0:OS:win7-sp1,Arch:amd64,Version:1.7.0_17-b02,Locale:pt_BR,Cntry:YY
+
+Thu Mar 14 15:57:28 2013
+:: No Updates available
+
+Thu Mar 14 15:57:28 2013
+:: JavaUpdate  [Critical] :  LastFinishTime is after LastScheduledTime, sleeping until next schedule Time: Tue Mar 19 05:57:00 2013
+
+Thu Mar 14 15:57:28 2013
+:: GetJavaFXUpdateTimeKey: returning FALSE
+
+Thu Mar 14 15:57:28 2013
+:: JavaUpdate : No valid LastFinishTime, sleeping until next schedule Time:  Thu Mar 21 06:10:00 2013
+
+Thu Mar 14 15:57:28 2013
+:: JavaUpdate [Critical] NextSchedTime=Tue Mar 19 05:57:00 2013
+JavaFXUpdate NextSchedTime=Thu Mar 21 06:10:00 2013
+JavaUpdate [Critical]lastSchedTime=Tue Mar 12 05:57:00 2013
+JavaUpdate [Critical]nextSchedTime=Tue Mar 19 05:57:00 2013
+JavaUpdate [Critical]sleeptime (sec=395972, hours=109, days=4.58)
+actual sleep time=395972000 msecs (109:59:32) for JavaUpdate [Critical]
+
+Thu Mar 14 16:01:36 2013
+:: **************** Running jusched ****************
+
+Thu Mar 14 16:10:47 2013
+:: **************** Running jusched ****************
+
+Thu Mar 14 16:25:29 2013
+:: **************** Running jusched ****************
+
+Thu Mar 14 16:30:30 2013
+:: GetJavaFXUpdateTimeKey: returning FALSE
+
+Thu Mar 14 16:30:30 2013
+:: Time for JavaFX update.
+
+Thu Mar 14 16:30:30 2013
+:: Started JavaFX Update process Command:C:\Program Files (x86)\Java\jre7\bin\javaws.exe  -silent -import -reverse -javafxau -system -J-Dkernel.download.dialog=false ""http://dl.javafx.com/javafx-cache.jnlp"" 
+
+Thu Mar 14 16:30:30 2013
+:: JavaUpdate  [Critical] :  LastFinishTime is after LastScheduledTime, sleeping until next schedule Time: Tue Mar 19 05:57:00 2013
+
+Thu Mar 14 16:30:30 2013
+:: JavaUpdate : LastFinishTime is after LastScheduledTime, sleeping until next schedule Time: Thu Mar 21 06:10:00 2013
+
+Thu Mar 14 16:30:30 2013
+:: JavaUpdate [Critical] NextSchedTime=Tue Mar 19 05:57:00 2013
+JavaFXUpdate NextSchedTime=Thu Mar 21 06:10:00 2013
+JavaUpdate [Critical]lastSchedTime=Tue Mar 12 05:57:00 2013
+JavaUpdate [Critical]nextSchedTime=Tue Mar 19 05:57:00 2013
+JavaUpdate [Critical]sleeptime (sec=393990, hours=109, days=4.56)
+actual sleep time=393990000 msecs (109:26:30) for JavaUpdate [Critical]
+
+Thu Mar 14 16:39:09 2013
+:: **************** Running jusched ****************

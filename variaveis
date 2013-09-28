@@ -1,0 +1,8 @@
+export GRADLE_HOME=~/Desktop/gradle-1.7
+export PATH=$PATH:$GRADLE_HOME/bin
+
+export ANDROID_HOME="~/Desktop/android-studio/sdk"
+export PATH="$ANDROID_HOME/tools/:$PATH"
+export PATH="$ANDROID_HOME/platform-tools/:$PATH"
+
+export ANDROID_SDK="~/Desktop/android-studio/sdk"

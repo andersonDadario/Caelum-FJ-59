@@ -1,0 +1,24 @@
+[0314/155206:VERBOSE1:setup_main.cc(1536)] Command Line: "C:\Program Files (x86)\Google\Chrome\Application\25.0.1364.160\Installer\chrmstp.exe" --configure-user-settings --verbose-logging --system-level --multi-install --chrome
+[0314/155206:VERBOSE1:setup_main.cc(1538)] multi install is 1
+[0314/155206:VERBOSE1:setup_main.cc(1541)] system install is 1
+[0314/155206:VERBOSE1:installer_state.cc(124)] Install distribution: Google Chrome
+[0314/155206:VERBOSE1:installer_state.cc(170)] Install distribution: Google Chrome binaries
+[0314/155206:VERBOSE1:install_util.cc(264)] Windows NT 6.1 SP1
+[0314/155206:ERROR:master_preferences.cc(110)] Failed to read master_preferences file at C:\Program Files (x86)\Google\Chrome\Application\master_preferences. Falling back to default preferences.
+[0314/155206:WARNING:master_preferences.cc(61)] Failed to parse master prefs file: Line: 1, column: 1, Unexpected token.
+[0314/155206:VERBOSE1:install.cc(107)] Creating per-user Desktop "Google Chrome" shortcut to C:\Program Files (x86)\Google\Chrome\Application\chrome.exe.
+[0314/155206:VERBOSE1:install.cc(107)] Creating per-user Quick Launch "Google Chrome" shortcut to C:\Program Files (x86)\Google\Chrome\Application\chrome.exe.
+[0314/155206:VERBOSE1:install.cc(107)] Creating per-user Start menu "Google Chrome" shortcut to C:\Program Files (x86)\Google\Chrome\Application\chrome.exe and pinning to the taskbar.
+[0314/162539:VERBOSE1:setup_main.cc(1536)] Command Line: "C:\Program Files (x86)\Google\Chrome\Application\25.0.1364.160\Installer\chrmstp.exe" --configure-user-settings --verbose-logging --system-level --multi-install --chrome --force-configure-user-settings
+[0314/162539:VERBOSE1:setup_main.cc(1538)] multi install is 1
+[0314/162539:VERBOSE1:setup_main.cc(1541)] system install is 1
+[0314/162539:VERBOSE1:installer_state.cc(124)] Install distribution: Google Chrome
+[0314/162539:VERBOSE1:installer_state.cc(170)] Install distribution: Google Chrome binaries
+[0314/162539:VERBOSE1:install_util.cc(264)] Windows NT 6.1 SP1
+[0314/162539:ERROR:master_preferences.cc(110)] Failed to read master_preferences file at C:\Program Files (x86)\Google\Chrome\Application\master_preferences. Falling back to default preferences.
+[0314/162539:WARNING:master_preferences.cc(61)] Failed to parse master prefs file: Line: 1, column: 1, Unexpected token.
+[0314/162539:VERBOSE1:install.cc(107)] Creating per-user Desktop "Google Chrome" shortcut to C:\Program Files (x86)\Google\Chrome\Application\chrome.exe.
+[0314/162539:VERBOSE1:install.cc(107)] Creating per-user Quick Launch "Google Chrome" shortcut to C:\Program Files (x86)\Google\Chrome\Application\chrome.exe.
+[0314/162539:VERBOSE1:install.cc(107)] Creating per-user Start menu "Google Chrome" shortcut to C:\Program Files (x86)\Google\Chrome\Application\chrome.exe and pinning to the taskbar.
+[0314/162540:ERROR:shell_util.cc(1330)] Failed to pin C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome\Google Chrome.lnk
+[0314/162540:WARNING:install.cc(105)] Failed: Creating per-user Start menu "Google Chrome" shortcut to C:\Program Files (x86)\Google\Chrome\Application\chrome.exe and pinning to the taskbar.
